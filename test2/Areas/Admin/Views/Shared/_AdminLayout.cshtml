@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+@RenderBody()
+<head>
+    <partial name="_MetaTags"/>
+    <title>آتریو - قالب بوت استرپ 4 مدیریتی </title>
+   <partial name="_HeaderReferences"/>
+</head>
+
+<body class="light rtl">
+    
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30">
+                <img class="loading-img-spin" src="assets/images/loading.png" alt="admin">
+            </div>
+            <p>لطفا صبر کنید...</p>
+        </div>
+    </div>
+    
+    <div class="overlay">   </div>
+  
+    <partial name="_Bar"/>
+   <partial name="_TopBar"/>
+   
+    <section class="content">
+        @RenderBody()
+    </section>
+     <partial name="_FooterReferences"/>
+   
+   
+</body>
